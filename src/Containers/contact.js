@@ -1,10 +1,11 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import './about.css'
 import Toolbar from '../components/Toolbar/Toolbar';
 import SideDrawer from '../components/SideDrawer/SideDrawer';
 import Backdrop from '../components/Backdrop/Backdrop';
-import { Link } from 'react-router-dom';
 
-class home extends Component {
+
+class contact extends Component {
   state = {
     sideDrawerOpen: false
   };
@@ -18,6 +19,7 @@ class home extends Component {
   backdropClickHandler = () => {
     this.setState({sideDrawerOpen: false});
   };
+
   render() {
     let backdrop;
 
@@ -25,25 +27,20 @@ class home extends Component {
       backdrop = <Backdrop click={this.backdropClickHandler}/>;
     }
     return (
-      <div>
+      <div className="">
       <Toolbar drawerToggleClickHandler={this.drawerToggleClickHandler}/>
       <SideDrawer show={this.state.sideDrawerOpen}/>
-        {backdrop}
-        <div className="hero">
-        <div className="story">
-        <h1>Go Buffs</h1>
-        <p>Buffs Trivia is the fun Alexa Skill that allows you to test your knowledge
-        of CU trivia both on and off the field. Better yet, you have the option to submit
-        a question here on the site, that might be featured in an upcoming update.
-        So be sure to fill out the form and tell all your friends.</p>
-        <Link to="/submit-a-question"><button>Submit a Question</button></Link>
-        </div>
+      {backdrop}
+      <div className="image">
+      <div className="about">
+      <h1>Contact Buffs Trivia</h1>
+      <p>You can reach us at buffstrivia at gmail .com
 
-        </div>
-
+      </p>
       </div>
-
+      </div>
+      </div>
     );
   }
 }
-export default home;
+export default contact;
