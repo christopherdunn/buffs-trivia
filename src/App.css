@@ -1,12 +1,4 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
 
 .App-header {
   background-color: #282c34;
@@ -22,12 +14,47 @@
 .App-link {
   color: #61dafb;
 }
+.hero {
+  background-size: cover;
+  background-image: url('./Ralphie.jpg');
+  height: 100vh;
+  width: 100vw;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.hero h1{
+  padding-top: 60px;
+  color: #cfb87c;
+}
+.story {
+  background: rgba(0,0,0,0.6);
+  width: 33%;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.story button {
+  background-color: #0277BD;
+  color: #fff !important;
+  display: inline-block;
+  padding: 5px 10px;
+  font-weight: bold;
+  transition: background-color 0.5s ease;
+  margin-bottom: 5px;
+  text-decoration: none !important;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-background-clip: padding-box;
+  -moz-background-clip: padding;
+  background-clip: padding-box;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  transition: -webkit-box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  transition: -moz-box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  transition: box-shadow 0.5s ease, background-color 0.5s ease, color 0.5s ease;
+  background-color: #cfb87c; color: #111111 !important;
 }
