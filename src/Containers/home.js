@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Toolbar from '../components/Toolbar/Toolbar';
 import SideDrawer from '../components/SideDrawer/SideDrawer';
 import Backdrop from '../components/Backdrop/Backdrop';
+import { Link } from 'react-router-dom';
 
 class home extends Component {
   state = {
@@ -39,7 +40,9 @@ class home extends Component {
         </div>
 
         </div>
-
+        <div className="footer">
+        <Link to="/alexa-privacy">Alexa Privacy Policy</Link> | <Link to="/alexa-privacy">Terms and Conditions</Link> | Web Privacy Policy
+        </div>
       </div>
 
     );
