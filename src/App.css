@@ -36,6 +36,7 @@
 }
 
 .story button {
+  cursor: pointer;
   background-color: #0277BD;
   color: #fff !important;
   display: inline-block;

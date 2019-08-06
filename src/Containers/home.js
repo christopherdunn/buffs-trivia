@@ -32,11 +32,11 @@ class home extends Component {
         <div className="hero">
         <div className="story">
         <h1>Go Buffs</h1>
-        <p>Buffs Trivia is the fun Alexa Skill that allows you test your knowledge
+        <p>Buffs Trivia is the fun Alexa Skill that allows you to test your knowledge
         of CU trivia both on and off the field. Better yet, you have the option to submit
-        a question here on the site that might featured in an upcoming update.
+        a question here on the site, that might be featured in an upcoming update.
         So be sure to fill out the form and tell all your friends.</p>
-        <button>Submit a Question</button>
+        <Link to="/submit-a-question"><button>Submit a Question</button></Link>
         </div>
 
         </div>

@@ -5,6 +5,7 @@ import Home from './Containers/home';
 import About from './Containers/about';
 import Alexa from './Containers/alexa';
 import Question from './Containers/question';
+import Contact from './Containers/contact';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
       <Route exact path="/submit-a-question" component={Question} />
       <Route exact path="/alexa-privacy" component={Alexa} />
       <Route exact path="/web-privacy" component={About} />
-
+      <Route exact path="/contact" component={Contact} />
       </Switch>
     </div>
     </BrowserRouter>
