@@ -40,7 +40,9 @@ class home extends Component {
         </div>
 
         </div>
-
+        <div className="footer">
+        <Link to="/alexa-privacy">Alexa Privacy Policy</Link> | <Link to="/alexa-privacy">Terms and Conditions</Link> | Web Privacy Policy
+        </div>
       </div>
 
     );
